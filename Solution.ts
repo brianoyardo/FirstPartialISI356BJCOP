@@ -102,7 +102,7 @@ class LoanManager{
         const index = this.loans.findIndex(loan => loan.ISBN === ISBN && loan.userID === userID);
       if (index !== -1) {
         this.loans.splice(index, 1);
-        this.emailService.sendEmail(userID, `Has devuelto el libro con ISBN ${ISBN}. ¡Gracias!`);
+        this.emailService.sendEmail(userID, `Has devuelto el libro con ISBN ${ISBN}. Gracias....!`);
       }
     }
 }
